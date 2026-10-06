@@ -1,0 +1,15 @@
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 20;
+    padding: 40px 16px;
+    background: linear-gradient()
+}
+.form{
+    justify-content: center;
+    color: blueviolet;
+    align-items: center;
+}
