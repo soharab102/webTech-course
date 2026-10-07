@@ -1,0 +1,64 @@
+body {
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    width: 550px;
+    margin: 10px;
+    display: flex;
+                    
+}
+h1{
+    color: blue;
+}
+h3{
+    color: red;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+form {
+    width: 520px;
+}
+
+label {
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 170px;
+    height: 18px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 225px;
+    height: 55px;
+    vertical-align: top;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    margin-right: 3px;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    width: auto;
+    text-align: left;
+    font-weight: normal;
+}
+
+button {
+    font-size: 11px;
+    padding: 2px 12px;
+    margin-top: 5px;
+}
