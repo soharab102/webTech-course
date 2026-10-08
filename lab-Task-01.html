@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,130 +12,179 @@
 <body>
 
 
-    <p>*- Denotes Required Information</p>
-    <p>> 1 Donation 2 Confirmation > Thank You!</p>
-    <h3>Donor Information</h3>
+
     <form action="#" method="post">
 
-        <label for="firstName">First Name</label>
-        <input type="text" name="firstName" id="firstName">
+        <p>*- Denotes Required Information</p>
+        <p>> 1 Donation >2 Confirmation > Thank You!</p>
 
-        <br>
 
-        <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" id="lastName">
-        <br>
+        <div class="donor-information-container">
+            <h3>Donor Information</h3>
+            <div class="common-txt-box">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName">
+            </div>
 
-        <label for="company">Company</label>
-        <input type="text" name="company" id="company">
-        <br>
+            <br>
+            <div class="common-txt-box">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+            <br>
 
-        <label for="address1">Address 1</label>
-        <input type="text" name="address1" id="address1">
-        <br>
+            <div class="common-txt-box">
+                <label for="company">Company</label>
+                <input type="text" name="company" id="company">
+            </div>
+            <br>
+            <div class="common-txt-box">
+                <label for="address1">Address 1</label>
+                <input type="text" name="address1" id="address1">
+            </div>
+            <br>
+            <div class="common-txt-box">
+                <label for="address2">Address 2</label>
+                <input type="text" name="address2" id="address2">
+            </div>
+            <br>
+            <div class="common-txt-box">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city">
+            </div>
+            <br>
 
-        <label for="address2">Address 2</label>
-        <input type="text" name="address2" id="address2">
-        <br>
+            <div class="common-txt-box">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="Select a State">Select a State</option>
+                </select>
+            </div>
+            <br>
+            <div class="common-txt-box">
+                <label for="zip">Zip Code</label>
+                <input type="text" name="zip" id="zip">
+            </div>
+            <br>
 
-        <label for="city">City</label>
-        <input type="text" name="city" id="city">
-        <br>
+            <div class="common-txt-box">
+                <label for="country">country</label>
+                <select name="country" id="country">
+                    <option value="Select a country">Select a Country</option>
+                </select>
+            </div>
+            <br>
+            <div class="common-txt-box">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" required>
+            </div>
+            <br>
+            <div class="common-txt-box">
+                <label for="fax">Fax</label>
+                <input type="text" name="fax" id="fax">
+            </div>
+            <br>
+            <div class="common-txt-box">
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <br>
 
-        <label for="state">State</label>
-        <select name="state" id="state">
-            <option value="Select a State">Select a State</option>
-        </select>
-        <br>
+            <label>Donation Amount</label>
+            <input type="radio" name="amount" id="none" value="none">
+            <label for="none">None</label>
 
-        <label for="zip">Zip Code</label>
-        <input type="text" name="zip" id="zip">
-        <br>
+            <input type="radio" name="amount" id="amount50" value="$50">
+            <label for="amount50">$50</label>
 
-        <label for="country">country</label>
-        <select name="country" id="country">
-            <option value="Select a country">Select a Country</option>
-        </select>
-        <br>
+            <input type="radio" name="amount" id="amount75" value="$75">
+            <label for="amount75">$75</label>
 
-        <label for="phone">Phone</label>
-        <input type="tel" name="phone" id="phone" required>
-        <br>
-        
-        <label for="fax">Fax</label>
-        <input type="text" name="fax" id="fax">
-        <br>
+            <input type="radio" name="amount" id="amount100" value="$100">
+            <label for="amount100">$100</label>
 
-        <label for="email">Email </label>
-        <input type="email" name="email" id="email">
-        <br>
+            <input type="radio" name="amount" id="amount250" value="$250">
+            <label for="amount250">$250</label>
 
-        <label >Donation Amount</label>
+            <input type="radio" name="amount" id="other" value="other">
+            <label for="other">Other</label>
+            <br><br>
 
-        <input type="radio" name="amount" id="none" value="none">
-        <label for="none">None</label>
+            <div class="common-txt-box">
+                <label class="common-label">Other Amount $</label>
+                <input type="text" name="otherAmt" id="otherAmt">
+            </div>
+            <br>
+            <div class="recurring-container">
+                <label class="common-label">Recurring Donation <br>(Check if yes)</label>
+                <input type="checkbox" name="recurring" id="recurring">
+                <label for="recurring">I am interested in giving on a regular basis.</label>
+                <br>
 
-        <input type="radio" name="amount" id="amount50" value="$50">
-        <label for="amount50">$50</label>
+                <label for="">Monthly Credit Card $</label>
+                <div class="little-txt-box"><input type="text" name="txt" id="txt"> </div>
+                For
+                <div class="little-txt-box"><input type="text" name="txt" id="txt"> </div>Months
+            </div>
 
-        <input type="radio" name="amount" id="amount75" value="$70">
-        <label for="amount70">$75</label>
-
-        <input type="radio" name="amount" id="amount100" value="$100">
-        <label for="amount100">$100</label>
-
-        <input type="radio" name="amount" id="amount250" value="$250">
-        <label for="amount250">$250</label>
-
-        <input type="radio" name="amount" id="other" value="other">
-        <label for="other">Other</label>
-        <br>
-
-        <label for="recurring">Recurring Donation <br>(Check if yes)</label>
-        <input type="checkbox" name="recurring" id="recurring">
-        <label for="recurring">I am interested in giving on a regular basis.</label>
-        <br>
-
-        <label for="">Monthly Credit Card $</label> <input type="text" name="" id=""> <label for="">For</label> <input type="text" name="" id=""> <label for="">Months</label>
-        <br>
+            <br>
+        </div>
 
 
 
 
 
         <h3>Honorarium and Memorial Donation Information</h3>
-        <label for="">I would like to make this donation</label>
-        <input type="radio" name="checkDonation" id="x">
-        <label for="x">To Honor</label>
-        
-        <input type="radio" name="checkDonation" id="y">
-        <label for="y">          In memory of</label>
+
+
+        <div class="common-radio">
+            <div>
+                <label class="common-label">I would like to make this donation</label>
+            </div>
+            <div class="radio-box">
+                <div><input type="radio" name="checkDonation" id="x">
+                    <label for="x">To Honor</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="checkDonation" id="y">
+                    <label for="y">In memory of</label>
+                </div>
+            </div>
+        </div>
         <br>
 
-        <label for="hname">Name</label>
-        <input type="text" name="hname" id="hname" required>
+        <div class="common-txt-box">
+            <label for="hname">Name</label>
+            <input type="text" name="hname" id="hname" required>
+        </div>
         <br>
-        
-        <label for="acknowledge">Acknowledge Donation to</label>
-        <input type="text" name="acknowledge" id="acknowledge" required>
+        <div class="common-txt-box">
+            <label for="acknowledge">Acknowledge Donation to</label>
+            <input type="text" name="acknowledge" id="acknowledge" required>
+        </div>
         <br>
-
-        <label for="address3">Address</label>
-        <input type="text" name="address3" id="address3" required>
+        <div class="common-txt-box">
+            <label for="address3">Address</label>
+            <input type="text" name="address3" id="address3" required>
+        </div>
         <br>
-        
-        <label for="city1">City</label>
-        <input type="text" name="city1" id="city1" required>
+        <div class="common-txt-box">
+            <label for="city1">City</label>
+            <input type="text" name="city1" id="city1" required>
+        </div>
         <br>
-
-         <label for="state1">State</label>
-        <select name="state1" id="state1">
-            <option value="Select a State">Select a State</option>
-        </select>
+        <div class="common-txt-box">
+            <label for="state1">State</label>
+            <select name="state1" id="state1">
+                <option value="Select a State">Select a State</option>
+            </select>
+        </div>
         <br>
-
-        <label for="zip1">Zip</label>
-        <input type="text" name="zip1" id="zip1" required>
+        <div class="common-txt-box">
+            <label for="zip1">Zip</label>
+            <input type="text" name="zip1" id="zip1" required>
+        </div>
         <br>
 
 
@@ -143,10 +193,13 @@
 
 
         <h3>Additional Information</h3>
-        <label for="">Please enter your name, company or organization as you would like it to appear in our publications:</label>
-        <br>
-        <label for="aname">Name</label>
-        <input type="text" name="aname" id="aname">
+        <label for="">Please enter your name, company or organization as you would like it to appear in our
+            publications:</label>
+        <br><br>
+        <div class="common-txt-box">
+            <label for="aname">Name</label>
+            <input type="text" name="aname" id="aname">
+        </div>
         <br>
 
         <input type="checkbox" name="acheck" id="acheck">
@@ -158,40 +211,77 @@
         <input type="checkbox" name="ccheck" id="ccheck">
         <label for="ccheck">Please save the cost of acknowledging this gift by not mailing a thank you letter.</label>
         <br>
-
-        <label for="comments">Comments (Please type any questions or feedback here)</label>
-        <textarea name="comments" id="comments" rows="5"></textarea>
+        <br>
         <br>
 
-        <label for="">How may we contact you?</label>
-        <input type="checkbox" name="op1" id="op1"><label for="op1">Email</label>
+        <div class="common-txt-box">
+            <label for="comments">Comments (Please type any questions or feedback here)</label>
+            <textarea name="comments" id="comments" rows="5"></textarea>
+        </div>
         <br>
-        
-        <input type="checkbox" name="op2" id="op2"><label for="op2">Postal Mail</label>
         <br>
-
-        <input type="checkbox" name="op3" id="op3"><label for="op3">Telephone</label>
         <br>
 
-        <input type="checkbox" name="op4" id="op4"><label for="op4">Fax</label>
+        <div class="common-check-box">
+
+            <label class="common-label">
+                How may we contact you?
+            </label>
+
+            <div class="check-options">
+
+                <div>
+                    <input type="checkbox" name="op1" id="op1">
+                    <label for="op1">Email</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="op2" id="op2">
+                    <label for="op2">Postal Mail</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="op3" id="op3">
+                    <label for="op3">Telephone</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="op4" id="op4">
+                    <label for="op4">Fax</label>
+                </div>
+
+            </div>
+
+        </div>
         <br>
 
-        <label for="">I would like to receive newsletters and information about special events by:</label>
-         <input type="checkbox" name="op11" id="op11"><label for="op11">Email</label>
+        <div class="common-check-box">
+            <label class="common-label">I would like to receive newsletters and information about special events
+                by:</label>
+            <div class="check-options">
+                <div>
+                    <input type="checkbox" name="op11" id="op11">
+                    <label for="op11">Email</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="op22" id="op22">
+                    <label for="op22">Postal Mail</label>
+                </div>
+            </div>
+        </div>
         <br>
-        
-        <input type="checkbox" name="op22" id="op22"><label for="op22">Postal Mail</label>
-        <br>
-        
-        <button type="reset">Reset</button>
-        <button type="submit">Continue</button>
 
-        
+        <div class="common-btn">
+            <button type="reset">Reset</button>
+            <button type="submit">Continue</button>
+        </div>
+
+        <p>Donate online with confidence. You are on a secure server. <br>
+            If you have any problems or questions, please contact support.</p>
     </form>
 
-    <p>Donate online with confidence. You are on a secure server. <br>
-If you have any problems or questions, please contact support.</p>
-    
+
+
 </body>
 
 

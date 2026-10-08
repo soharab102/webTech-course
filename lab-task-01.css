@@ -1,14 +1,11 @@
 body {
+    
     background-color: #eee;
     font-family: Arial, sans-serif;
     font-size: 12px;
     width: 550px;
-    margin: 10px;
-    display: flex;
+    margin: 10px auto;
                     
-}
-h1{
-    color: blue;
 }
 h3{
     color: red;
@@ -17,48 +14,86 @@ h3{
 }
 
 form {
-    width: 520px;
+    background-color: rgb(190, 190, 178);
 }
-
-label {
-    font-weight: bold;
-    display: inline-block;
-    width: 150px;
-    text-align: right;
-    margin-right: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select {
-    width: 170px;
+/* for common input */
+.common-txt-box{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    /* margin-top: 5px; */
+    gap: 10px;
+    width: 500px;
     height: 18px;
     box-sizing: border-box;
 }
+.common-txt-box label{
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+    
+}
+.common-txt-box input{
+    padding: 2.5px;
+}
+ .little-txt-box{
+    display: inline;
+}
+.little-txt-box input{
+    width: 30px;
+    height: 18px;
+    padding: 1px 2px;
+    font-size: 10px;
+    box-sizing: border-box;
+}
 
+
+/* common radio box */
+
+
+.common-radio{
+    display:inline;
+    justify-content:center;
+    
+}
+.common-radio .radio-box{
+    display: block;
+    justify-content: first baseline;
+}
+
+/* common check box */
+.common-check-box{
+    display: flex;
+    align-items:baseline;
+}
+.common-label{
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+}
+.recurring-container{
+    display:inline;
+    justify-content: center;
+    align-items: center;
+}
 textarea {
     width: 225px;
     height: 55px;
     vertical-align: top;
 }
-
-input[type="radio"],
-input[type="checkbox"] {
-    width: auto;
-    height: auto;
-    margin-right: 3px;
+.common-btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
+.common-btn button {
 
-input[type="radio"] + label,
-input[type="checkbox"] + label {
-    width: auto;
-    text-align: left;
-    font-weight: normal;
-}
-
-button {
     font-size: 11px;
     padding: 2px 12px;
     margin-top: 5px;
+    border-radius:50px;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    
 }
