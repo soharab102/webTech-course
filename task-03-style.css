@@ -92,9 +92,9 @@ table td{
     border: 1px solid black;
     padding: 30px;
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     background-color: rgb(92, 157, 157);
-    
+    color: #ffffff;
 }
 
 
@@ -105,18 +105,17 @@ table td{
     max-width: 520px;
     margin: 20px auto;
     padding: 2rem;
-    color:rgb(32, 120, 120);
-    /* background-color: rgb(57, 64, 85); */
+    color:rgb(175, 194, 194);
+    background-color: rgb(227, 232, 234);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(12, 2, 30, 0.1);
     font-size: 15px;
-
 }
 
 
 .form-section h1 {
     margin: 0 0 1.5rem;
-    color: #142d77;
+    color: #293760;
     text-align: center;
 }
 
@@ -124,14 +123,15 @@ table td{
 .form-section fieldset {
     margin: 0;
     padding: 1.5rem;
-    border: 2px solid #cbd5e1;
+    border: 2px solid #293760;
     border-radius: 12px;
+    border: none;
 }
 
 
 .form-section legend {
     padding: 0 0.5rem;
-    color: #3f2db1;
+    color: #293760;
     font-weight: 700;
     font-size: 16px;
 }
@@ -141,6 +141,7 @@ table td{
     margin: 0.5rem 0;
     font-weight: 600;
     font-size: 20px;
+    color: #293760;
 }
 
 .form-section input,
@@ -150,20 +151,20 @@ table td{
     min-height: 44px;
     margin: 0.25rem 0 0.75rem;
     padding: 0.65rem 0.75rem;
-    border: 1px solid #cbd5e1;
+    border: 1px solid #ccc;
     border-radius: 8px;
-    background: #9fbdb9;
-    color: #1f2937;
+    background: #73a49d;
+    color: #eef0f3;
     font: inherit;
     font-size: 20px;
     font-weight: bold;
 }
 
-.form-section input:focus,
+/* .form-section input:focus,
 .form-section select:focus {
     outline: 3px solid rgb(59 130 246 / 25%);
     border-color: #3b82f6;
-}
+} */
 
 
 /* common btn */
@@ -210,5 +211,5 @@ footer{
 }
 footer p{
     margin: 0;
-    font-size: 20px;
+    font-size: 25px;
 }
