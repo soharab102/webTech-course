@@ -61,10 +61,11 @@ body{
     width: 50%;
     height: 50%;
 }
-.hero-parent div{
+.hero-parent .paragraph{
     width: 50%;
     font-size: 25px;
     text-align: justify;
+    color: #142d77;
 }
 
 /* table section */
@@ -77,14 +78,22 @@ table{
 table th{
     border: 1px solid black;
     padding: 15px;
-    background-color: rgb(29, 78, 216);
+    background-color: rgb(35, 54, 108);
     color: white;
+    font-size: 25px;
+}
+table .upcoming-events{
+    background-color: rgb(93, 102, 127);
+    color: white;
+    font-size: 30px;
+    font-style: italic;
 }
 table td{
     border: 1px solid black;
     padding: 30px;
     text-align: center;
-    font-size: larger;
+    font-size: 18px;
+    background-color: rgb(92, 157, 157);
     
 }
 
@@ -92,38 +101,114 @@ table td{
 
 /* form section */
 
-form{
-    background-color: rgb(98, 137, 125);
-    align-items: center;
+.form-section{
+    max-width: 520px;
+    margin: 20px auto;
+    padding: 2rem;
+    color:rgb(32, 120, 120);
+    /* background-color: rgb(57, 64, 85); */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+
 }
 
-.form-parent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 0;
+
+.form-section h1 {
+    margin: 0 0 1.5rem;
+    color: #142d77;
+    text-align: center;
 }
 
 
+.form-section fieldset {
+    margin: 0;
+    padding: 1.5rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+}
 
 
+.form-section legend {
+    padding: 0 0.5rem;
+    color: #3f2db1;
+    font-weight: 700;
+    font-size: 16px;
+}
 
+.form-section label {
+    display: inline-block;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    font-size: 20px;
+}
 
+.form-section input,
+.form-section select {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 44px;
+    margin: 0.25rem 0 0.75rem;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #9fbdb9;
+    color: #1f2937;
+    font: inherit;
+    font-size: 20px;
+    font-weight: bold;
+}
 
-
-
+.form-section input:focus,
+.form-section select:focus {
+    outline: 3px solid rgb(59 130 246 / 25%);
+    border-color: #3b82f6;
+}
 
 
 /* common btn */
 .common-btn{
-    background-color: rgb(29, 78, 216);
+    background-color: rgb(72, 79, 99);
     padding: 10px 10px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 10px;
     border: none;
-    color: #ffffff;
+    color: #c8c9d5;
     cursor: pointer;
     width: 160px;
+}
+.form-section .common-btn:hover {
+    background: #1d4ed8;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .form-section {
+        margin: 1.5rem 1rem;
+        padding: 1.25rem;
+    }
+
+    .form-section fieldset {
+        padding: 1rem;
+    }
+}
+
+
+
+/* footer */
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(98, 137, 125);
+    color: beige;
+}
+footer p{
+    margin: 0;
+    font-size: 20px;
 }
